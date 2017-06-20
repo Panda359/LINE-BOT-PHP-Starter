@@ -31,10 +31,13 @@ if (!is_null($events['events'])) {
 		
 			
 			
-		$text = $event['message']['text'];
+		//$text = $event['message']['text'];
 			
-			$randomnumber = $a[$random_keys[0]];
+			$randomnumber = 'dfsdf';
+			//$randomnumber = $a[$random_keys[0]];
 			// Get replyToken
+			
+			
 			$replyToken = $event['replyToken'];
 
 			// Build message to reply back
