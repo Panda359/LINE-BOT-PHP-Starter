@@ -15,7 +15,7 @@ if (!is_null($events['events'])) {
 			if ($event['type'] == 'message' && $event['message']['type'] == 'text' && substr( $event['message']['text'], 0, 8 ) === "chicken:")
 			{
 			
-		if ($event['type'] == 'message' && $event['message']['type'] == 'text' && $event['message']['text']=='random')
+		if ($event['type'] == 'message' && $event['message']['type'] == 'text' && substr( $event['message']['text'], 7, 6 ) === "random")
 		{
 		$text = $event['message']['text'];
 			
