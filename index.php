@@ -9,7 +9,7 @@ $events = json_decode($content, true);
 if (!is_null($events['events'])) {
 	// Loop through each event
 	
-	$a=array("a"=>"member1","b"=>"member2","c"=>"member3","d"=>"member4");
+	$a=array("aa"=>"member1","bb"=>"member2","ca"=>"member3","da"=>"member4");
 	
 	foreach ($events['events'] as $event) {
 		// Reply only when message sent is in 'text' format
