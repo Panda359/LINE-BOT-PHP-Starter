@@ -33,7 +33,7 @@ if (!is_null($events['events'])) {
 			
 		//$text = $event['message']['text'];
 			
-			$randomnumber = 'dfsdf';
+			$randomnumber = $a[$random_keys[0]];
 			//$randomnumber = $a[$random_keys[0]];
 			// Get replyToken
 			
