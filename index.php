@@ -260,7 +260,7 @@ if (!is_null($events['events'])) {
 		{
 		$text = $event['message']['text'];
 			
-			$randomnumber = rand(1,3);
+			$randomnumber = rand(1,99);
 			// Get replyToken
 			$replyToken = $event['replyToken'];
 
