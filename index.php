@@ -26,7 +26,7 @@ if (!is_null($events['events'])) {
 				
 		if ($event['type'] == 'message' && $event['message']['type'] == 'text' && substr( $event['message']['text'], 9, 5 ) === "color")
 		{
-		$a=array("red","green","blue","yellow","brown");
+		$a=array("a"=>"red","b"=>"green","c"=>"blue","d"=>"yellow");
 		$random_keys=array_rand($a,1);
 		
 			
