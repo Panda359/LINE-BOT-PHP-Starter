@@ -37,7 +37,7 @@ if (!is_null($events['events'])) {
 			{
 			
 				
-			if ($event['type'] == 'message' && $event['message']['type'] == 'text' && substr( $event['message']['text'], 9, 10 ) === "All member")
+			if ($event['type'] == 'message' && $event['message']['type'] == 'text' && substr( $event['message']['text'], 9, 10 ) === "all member")
 		{
 		
 	//	$random_keys=array_rand($a,1);
@@ -95,7 +95,7 @@ if (!is_null($events['events'])) {
 		}	
 				
 				
-				else if ($event['type'] == 'message' && $event['message']['type'] == 'text' && substr( $event['message']['text'], 9, 7 ) === "All vip")
+				else if ($event['type'] == 'message' && $event['message']['type'] == 'text' && substr( $event['message']['text'], 9, 7 ) === "all vip")
 		{
 		
 	//	$random_keys=array_rand($a,1);
@@ -106,7 +106,7 @@ if (!is_null($events['events'])) {
 			$randomnumber='';
 			for($i=0;$i<6;$i++)
 			{
-				$randomnumber = $randomnumber.$a[$i]."\n";
+				$randomnumber = $randomnumber.$b[$i]."\n";
 			}
 				
 				//$randomnumber = $a[$random_keys[0]];
