@@ -26,7 +26,7 @@ if (!is_null($events['events'])) {
 				
 		if ($event['type'] == 'message' && $event['message']['type'] == 'text' && substr( $event['message']['text'], 9, 6 ) === "member")
 		{
-		$a=array("m1"=>"member1","m2"=>"member2","m3"=>"member3","m4"=>"member4");
+		$a=array("a"=>"member1","b"=>"member2","c"=>"member3","d"=>"member4");
 		$random_keys=array_rand($a,1);
 		
 			
