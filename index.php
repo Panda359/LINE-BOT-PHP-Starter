@@ -10,6 +10,7 @@ if (!is_null($events['events'])) {
 	// Loop through each event
 	
 	$a=array("aa"=>"member1","bb"=>"member2","ca"=>"member3","da"=>"member4");
+	$b=array("aa"=>"vip1","bb"=>"vip2","ca"=>"vip3","da"=>"vip4");
 	
 	foreach ($events['events'] as $event) {
 		// Reply only when message sent is in 'text' format
@@ -34,6 +35,58 @@ if (!is_null($events['events'])) {
 		//$text = $event['message']['text'];
 			
 			$randomnumber = $a[$random_keys[0]];
+			//$randomnumber = $a[$random_keys[0]];
+			// Get replyToken
+			
+			
+			$replyToken = $event['replyToken'];
+
+			// Build message to reply back
+	
+			$messages3 = [
+				
+			
+				'type' => 'text',
+				'text' => $randomnumber
+				
+					];
+			
+			
+
+			// Make a POST Request to Messaging API to reply to sender
+			$url = 'https://api.line.me/v2/bot/message/reply';
+			$data = [
+				'replyToken' => $replyToken,
+				'messages' => [$messages3],
+				
+				
+			];
+			$post = json_encode($data);
+			$headers = array('Content-Type: application/json', 'Authorization: Bearer ' . $access_token);
+
+			$ch = curl_init($url);
+			curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");
+			curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+			curl_setopt($ch, CURLOPT_POSTFIELDS, $post);
+			curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
+			curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
+			$result = curl_exec($ch);
+			curl_close($ch);
+
+			echo $result . "\r\n";
+		
+		
+		}
+				
+				else if ($event['type'] == 'message' && $event['message']['type'] == 'text' && substr( $event['message']['text'], 9, 3 ) === "vip")
+		{
+		$random_keys=array_rand($b,1);
+		
+			
+			
+		//$text = $event['message']['text'];
+			
+			$randomnumber = $b[$random_keys[0]];
 			//$randomnumber = $a[$random_keys[0]];
 			// Get replyToken
 			
