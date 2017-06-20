@@ -20,9 +20,9 @@ if (!is_null($events['events'])) {
 	$b[0]="vip1";
 	$b[1]="vip2";
 	$b[2]="vip3";
-	$a[3]="vip4";
-	$a[4]="vip5";
-	$a[5]="vip6";
+	$b[3]="vip4";
+	$b[4]="vip5";
+	$b[5]="vip6";
 	
 	
 	
