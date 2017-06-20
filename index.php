@@ -8,14 +8,73 @@ $events = json_decode($content, true);
 // Validate parsed JSON data
 if (!is_null($events['events'])) {
 	// Loop through each event
+	
+	
+	
 	foreach ($events['events'] as $event) {
 		// Reply only when message sent is in 'text' format
+	
+		
+		
 		
 		
 			if ($event['type'] == 'message' && $event['message']['type'] == 'text' && substr( $event['message']['text'], 0, 8 ) === "chicken:")
 			{
 			
-		if ($event['type'] == 'message' && $event['message']['type'] == 'text' && substr( $event['message']['text'], 9, 6 ) === "random")
+				
+				
+				
+		if ($event['type'] == 'message' && $event['message']['type'] == 'text' && substr( $event['message']['text'], 9, 5 ) === "color")
+		{
+		$a=array("red","green","blue","yellow","brown");
+		$random_keys=array_rand($a,1);
+		
+			
+			
+		$text = $event['message']['text'];
+			
+			$randomnumber = $a[$random_keys[0]];
+			// Get replyToken
+			$replyToken = $event['replyToken'];
+
+			// Build message to reply back
+	
+			$messages3 = [
+				
+			
+				'type' => 'text',
+				'text' => $randomnumber
+				
+					];
+			
+			
+
+			// Make a POST Request to Messaging API to reply to sender
+			$url = 'https://api.line.me/v2/bot/message/reply';
+			$data = [
+				'replyToken' => $replyToken,
+				'messages' => [$messages3],
+				
+				
+			];
+			$post = json_encode($data);
+			$headers = array('Content-Type: application/json', 'Authorization: Bearer ' . $access_token);
+
+			$ch = curl_init($url);
+			curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");
+			curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+			curl_setopt($ch, CURLOPT_POSTFIELDS, $post);
+			curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
+			curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
+			$result = curl_exec($ch);
+			curl_close($ch);
+
+			echo $result . "\r\n";
+		
+		
+		}
+				
+		else if ($event['type'] == 'message' && $event['message']['type'] == 'text' && substr( $event['message']['text'], 9, 6 ) === "random")
 		{
 		$text = $event['message']['text'];
 			
