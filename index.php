@@ -12,7 +12,10 @@ if (!is_null($events['events'])) {
 		// Reply only when message sent is in 'text' format
 		
 		
-		if ($event['type'] == 'message' && $event['message']['type'] == 'text' && $event['message']['text']=='random x')
+			if ($event['type'] == 'message' && $event['message']['type'] == 'text' && substr( $event['message']['text'], 0, 8 ) === "chicken:")
+			{
+			
+		if ($event['type'] == 'message' && $event['message']['type'] == 'text' && $event['message']['text']=='random')
 		{
 		$text = $event['message']['text'];
 			
@@ -112,6 +115,9 @@ if (!is_null($events['events'])) {
 
 			echo $result . "\r\n";
 		}
+				
+				
+			} ///ifff chicken:
 	}
 }
 echo "OK";
