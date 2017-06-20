@@ -48,7 +48,7 @@ if (!is_null($events['events'])) {
 			$randomnumber='';
 			for($i=0;$i<6;$i++)
 			{
-				$randomnumber = $randomnumber.$a[$i].'\n';
+				$randomnumber = $randomnumber.$a[$i]."\n";
 			}
 				
 				//$randomnumber = $a[$random_keys[0]];
