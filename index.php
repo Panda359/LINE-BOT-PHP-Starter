@@ -15,7 +15,7 @@ if (!is_null($events['events'])) {
 			if ($event['type'] == 'message' && $event['message']['type'] == 'text' && substr( $event['message']['text'], 0, 8 ) === "chicken:")
 			{
 			
-		if ($event['type'] == 'message' && $event['message']['type'] == 'text' && substr( $event['message']['text'], 8, 6 ) === "random")
+		if ($event['type'] == 'message' && $event['message']['type'] == 'text' && substr( $event['message']['text'], 9, 6 ) === "random")
 		{
 		$text = $event['message']['text'];
 			
@@ -60,7 +60,7 @@ if (!is_null($events['events'])) {
 		
 		else if ($event['type'] == 'message' && $event['message']['type'] == 'text') {
 			// Get text sent
-			$text = $event['message']['text'];
+			$text = substr( $event['message']['text'], 9, 6 );
 			
 		//	$randomnumber = rand(10,100);
 			// Get replyToken
