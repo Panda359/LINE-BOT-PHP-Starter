@@ -60,7 +60,7 @@ if (!is_null($events['events'])) {
 		
 		else if ($event['type'] == 'message' && $event['message']['type'] == 'text') {
 			// Get text sent
-			$text = substr( $event['message']['text'], 9, 6 );
+			$text = substr( $event['message']['text'], 9);
 			
 		//	$randomnumber = rand(10,100);
 			// Get replyToken
