@@ -30,13 +30,13 @@ if (!is_null($events['events'])) {
 		if ($event['type'] == 'message' && $event['message']['type'] == 'text' && substr( $event['message']['text'], 9, 6 ) === "member")
 		{
 		
-		$random_keys=array_rand($a,1);
+	//	$random_keys=array_rand($a,1);
 		
 			
 			
 		//$text = $event['message']['text'];
 			
-			$randomnumber = $a[$random_keys[0]];
+			$randomnumber = $a[rand(0,2)];
 			//$randomnumber = $a[$random_keys[0]];
 			// Get replyToken
 			
