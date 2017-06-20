@@ -10,7 +10,7 @@ if (!is_null($events['events'])) {
 	// Loop through each event
 	
 	$a=array("aa"=>"member1","bb"=>"member2","ca"=>"member3","da"=>"member4");
-	$b=array("aa"=>"vip1","bb"=>"vip2","ca"=>"vip3","da"=>"vip4");
+	$b=array("a"=>"vip1","b"=>"vip2","c"=>"vip3","d"=>"vip4");
 	
 	foreach ($events['events'] as $event) {
 		// Reply only when message sent is in 'text' format
