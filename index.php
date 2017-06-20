@@ -13,6 +13,8 @@ if (!is_null($events['events'])) {
 		if ($event['type'] == 'message' && $event['message']['type'] == 'text') {
 			// Get text sent
 			$text = $event['message']['text'];
+			
+			$randomnumber = rand(10,100);
 			// Get replyToken
 			$replyToken = $event['replyToken'];
 
@@ -33,6 +35,13 @@ if (!is_null($events['events'])) {
 				'text' => $text
 				
 					];
+			$messages3 = [
+				
+			
+				'type' => 'text',
+				'text' => $randomnumber
+				
+					];
 			
 			
 
@@ -40,7 +49,7 @@ if (!is_null($events['events'])) {
 			$url = 'https://api.line.me/v2/bot/message/reply';
 			$data = [
 				'replyToken' => $replyToken,
-				'messages' => [$messages2,$messages],
+				'messages' => [$messages2,$messages,$messages3],
 				
 				
 			];
