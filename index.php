@@ -12,7 +12,19 @@ if (!is_null($events['events'])) {
 	$a[0]="member1";
 	$a[1]="member2";
 	$a[2]="member3";
-	$b=array("a"=>"vip1","b"=>"vip2","c"=>"vip3","d"=>"vip4");
+	$a[3]="member4";
+	$a[4]="member5";
+	$a[5]="member6";
+	
+	
+	$b[0]="vip1";
+	$b[1]="vip2";
+	$b[2]="vip3";
+	$a[3]="vip4";
+	$a[4]="vip5";
+	$a[5]="vip6";
+	
+	
 	
 	foreach ($events['events'] as $event) {
 		// Reply only when message sent is in 'text' format
@@ -36,7 +48,7 @@ if (!is_null($events['events'])) {
 			
 		//$text = $event['message']['text'];
 			
-			$randomnumber = $a[rand(0,2)];
+			$randomnumber = $a[rand(0,5)];
 			//$randomnumber = $a[$random_keys[0]];
 			// Get replyToken
 			
@@ -82,13 +94,13 @@ if (!is_null($events['events'])) {
 				
 				else if ($event['type'] == 'message' && $event['message']['type'] == 'text' && substr( $event['message']['text'], 9, 3 ) === "vip")
 		{
-		$random_keys=array_rand($b,1);
+		//$random_keys=array_rand($a,1);
 		
 			
 			
 		//$text = $event['message']['text'];
 			
-			$randomnumber = $b[$random_keys[0]];
+			$randomnumber = $b[rand(0,5)];
 			//$randomnumber = $a[$random_keys[0]];
 			// Get replyToken
 			
@@ -128,7 +140,6 @@ if (!is_null($events['events'])) {
 			curl_close($ch);
 
 			echo $result . "\r\n";
-		
 		
 		}
 				
