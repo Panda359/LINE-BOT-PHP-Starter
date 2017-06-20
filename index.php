@@ -9,9 +9,9 @@ $events = json_decode($content, true);
 if (!is_null($events['events'])) {
 	// Loop through each event
 	
-	$a['a1']="member1";
-	$a['a2']="member2";
-	$a['a3']="member3";
+	$a['a']="member1";
+	$a['b']="member2";
+	$a['c']="member3";
 	$b=array("a"=>"vip1","b"=>"vip2","c"=>"vip3","d"=>"vip4");
 	
 	foreach ($events['events'] as $event) {
