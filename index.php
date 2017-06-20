@@ -39,7 +39,7 @@ if (!is_null($events['events'])) {
 				
 				
 				
-		if ($event['type'] == 'message' && $event['message']['type'] == 'text' && substr( $event['message']['text'], 9, 6 ) === "member")
+		if ($event['type'] == 'message' && $event['message']['type'] == 'text' && substr( $event['message']['text'], 9, 10 ) === "member ran")
 		{
 		
 	//	$random_keys=array_rand($a,1);
@@ -92,7 +92,7 @@ if (!is_null($events['events'])) {
 		
 		}
 				
-				else if ($event['type'] == 'message' && $event['message']['type'] == 'text' && substr( $event['message']['text'], 9, 3 ) === "vip")
+				else if ($event['type'] == 'message' && $event['message']['type'] == 'text' && substr( $event['message']['text'], 9, 7 ) === "vip ran")
 		{
 		//$random_keys=array_rand($a,1);
 		
