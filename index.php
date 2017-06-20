@@ -9,7 +9,7 @@ $events = json_decode($content, true);
 if (!is_null($events['events'])) {
 	// Loop through each event
 	
-	
+	$a=array("a"=>"member1","b"=>"member2","c"=>"member3","d"=>"member4");
 	
 	foreach ($events['events'] as $event) {
 		// Reply only when message sent is in 'text' format
@@ -26,7 +26,7 @@ if (!is_null($events['events'])) {
 				
 		if ($event['type'] == 'message' && $event['message']['type'] == 'text' && substr( $event['message']['text'], 9, 6 ) === "member")
 		{
-		$a=array("a"=>"member1","b"=>"member2","c"=>"member3","d"=>"member4");
+		
 		$random_keys=array_rand($a,1);
 		
 			
