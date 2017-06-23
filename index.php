@@ -38,9 +38,9 @@ if (!is_null($events['events'])) {
 	
 			if ($event['type'] == 'message' && $event['message']['type'] == 'text' )
 		{
-		$text_mes = trim($event['message']['text']);
-		$text_mes=substr_replace($text_mes, '', -1 , 1);
-		$text_mes=substr_replace($text_mes, '', 0 , 1);
+		//$text_mes = trim($event['message']['text']);
+		//$text_mes=substr_replace($text_mes, '', -1 , 1);
+		//$text_mes=substr_replace($text_mes, '', 0 , 1);
 		$text_mes = trim($event['message']['text']);
 				
 			if ($event['type'] == 'message' && $event['message']['type'] == 'text' && $text_mes == "all member")
