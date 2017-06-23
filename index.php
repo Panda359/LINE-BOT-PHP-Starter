@@ -33,7 +33,8 @@ if (!is_null($events['events'])) {
 		$last_mes = substr(trim($event['message']['text']), -1);
 		$first_mes = substr(trim($event['message']['text']), 1);
 		
-		
+		echo $first_mes;
+		echo $last_mes;
 	
 			if ($event['type'] == 'message' && $event['message']['type'] == 'text' && $last_mes=='*' && $first_mes=='*')
 		{
