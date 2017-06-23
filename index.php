@@ -1,3 +1,4 @@
+
 <?php
 $access_token = 'wyNwDWmwcKmIUbQG5FkjglxrQiOa75M5LKyCbUWgeBSt7dT3UWkV7FHgdT2mjQkBNJk/8ER9a5jO2hydIZJwSE5q0j/veSV3UU89JAP0hEXiSiPo+1kittDzOTiA4Y254IuTo4t6d/WFtWmh3EGD+QdB04t89/1O/w1cDnyilFU=';
 
@@ -29,15 +30,19 @@ if (!is_null($events['events'])) {
 	foreach ($events['events'] as $event) {
 		// Reply only when message sent is in 'text' format
 	
+		$last_mes = substr(trim($event['message']['text']), -1);
+		$first_mes = substr(trim($event['message']['text']), 1);
 		
 		
-		
-		
-			if ($event['type'] == 'message' && $event['message']['type'] == 'text' && substr( $event['message']['text'], 0, 8 ) === "chicken:")
-			{
-			
+	
+			if ($event['type'] == 'message' && $event['message']['type'] == 'text' && $last_mes=='*' && $first_mes=='*')
+		{
+		$text_mes = trim($event['message']['text']);
+		$text_mes=substr_replace($text_mes, '', -1 , 1);
+		$text_mes=substr_replace($text_mes, '', 0 , 1);
+		$text_mes = trim($event['message']['text']);
 				
-			if ($event['type'] == 'message' && $event['message']['type'] == 'text' && substr( $event['message']['text'], 9, 10 ) === "all member")
+			if ($event['type'] == 'message' && $event['message']['type'] == 'text' && $text_mes == "all member")
 		{
 		
 	//	$random_keys=array_rand($a,1);
@@ -95,7 +100,7 @@ if (!is_null($events['events'])) {
 		}	
 				
 				
-				else if ($event['type'] == 'message' && $event['message']['type'] == 'text' && substr( $event['message']['text'], 9, 7 ) === "all vip")
+				else if ($event['type'] == 'message' && $event['message']['type'] == 'text' && $text_mes == "all vip")
 		{
 		
 	//	$random_keys=array_rand($a,1);
@@ -152,7 +157,7 @@ if (!is_null($events['events'])) {
 		
 		}	
 				
-		else if ($event['type'] == 'message' && $event['message']['type'] == 'text' && substr( $event['message']['text'], 9, 10 ) === "ran member")
+		else if ($event['type'] == 'message' && $event['message']['type'] == 'text' && $text_mes == "ran member")
 		{
 		
 	//	$random_keys=array_rand($a,1);
@@ -205,7 +210,7 @@ if (!is_null($events['events'])) {
 		
 		}
 				
-				else if ($event['type'] == 'message' && $event['message']['type'] == 'text' && substr( $event['message']['text'], 9, 7 ) === "ran vip")
+				else if ($event['type'] == 'message' && $event['message']['type'] == 'text' && $text_mes == "ran vip")
 		{
 		//$random_keys=array_rand($a,1);
 		
@@ -256,11 +261,11 @@ if (!is_null($events['events'])) {
 		
 		}
 				
-		else if ($event['type'] == 'message' && $event['message']['type'] == 'text' && substr( $event['message']['text'], 9, 6 ) === "random")
+		else if ($event['type'] == 'message' && $event['message']['type'] == 'text' && $text_mes == "random")
 		{
-		$text = $event['message']['text'];
+		//$text = $event['message']['text'];
 			
-			$randomnumber = rand(1,99);
+			$randomnumber = rand(1,15);
 			// Get replyToken
 			$replyToken = $event['replyToken'];
 
