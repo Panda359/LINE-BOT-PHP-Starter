@@ -36,7 +36,7 @@ if (!is_null($events['events'])) {
 		echo $first_mes;
 		echo $last_mes;
 	
-			if ($event['type'] == 'message' && $event['message']['type'] == 'text' && $last_mes=='*' && $first_mes=='*')
+			if ($event['type'] == 'message' && $event['message']['type'] == 'text' )
 		{
 		$text_mes = trim($event['message']['text']);
 		$text_mes=substr_replace($text_mes, '', -1 , 1);
@@ -365,8 +365,7 @@ if (!is_null($events['events'])) {
 				
 				
 			} ///ifff chicken:
-echo $last_mes;
-		echo $first_mes;
+
 	
 	
 	}
