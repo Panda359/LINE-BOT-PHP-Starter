@@ -365,6 +365,11 @@ if (!is_null($events['events'])) {
 				
 				
 			} ///ifff chicken:
+echo $last_mes;
+		echo $first_mes;
+	
+	
 	}
 }
 echo "OK";
+
