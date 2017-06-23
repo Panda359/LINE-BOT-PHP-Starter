@@ -30,8 +30,10 @@ if (!is_null($events['events'])) {
 	foreach ($events['events'] as $event) {
 		// Reply only when message sent is in 'text' format
 	
-		$last_mes = substr(trim($event['message']['text']), -1);
-		$first_mes = substr(trim($event['message']['text']), 1);
+		$text_mes=$event['message']['text'];
+		
+		$last_mes = substr(trim($text_mes), -1);
+		$first_mes = substr(trim($text_mes), 1);
 		
 		echo $first_mes;
 		echo $last_mes;
