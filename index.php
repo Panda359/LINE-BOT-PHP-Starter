@@ -309,7 +309,7 @@ if (!is_null($events['events'])) {
 			// Get text sent
 			//$text = substr( $event['message']['text'], 9);
 			
-			$text=$last_mes.''.$first_mes;
+			$text=$last_mes.'pppppppppppp'.$first_mes;
 			
 		//	$randomnumber = rand(10,100);
 			// Get replyToken
@@ -330,13 +330,6 @@ if (!is_null($events['events'])) {
 			
 				'type' => 'text',
 				'text' => $text
-				
-					];
-			$messages3 = [
-				
-			
-				'type' => 'text',
-				'text' => $randomnumber
 				
 					];
 			
