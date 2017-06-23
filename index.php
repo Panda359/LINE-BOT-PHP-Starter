@@ -56,8 +56,12 @@ if (!is_null($events['events'])) {
 			{
 				$randomnumber = $randomnumber.$a[$i]."\n";
 			}
+			
 				
-				//$randomnumber = $a[$random_keys[0]];
+				
+				
+				
+				$randomnumber = "all member";      ////////////////check
 			// Get replyToken
 			
 			
@@ -115,7 +119,7 @@ if (!is_null($events['events'])) {
 				$randomnumber = $randomnumber.$b[$i]."\n";
 			}
 				
-				//$randomnumber = $a[$random_keys[0]];
+				$randomnumber ="all vip"; /////////check
 			// Get replyToken
 			
 			
@@ -168,7 +172,7 @@ if (!is_null($events['events'])) {
 		//$text = $event['message']['text'];
 			
 			$randomnumber = $a[rand(0,5)];
-			//$randomnumber = $a[$random_keys[0]];
+			$randomnumber = "ran member"; ///////check
 			// Get replyToken
 			
 			
@@ -220,7 +224,7 @@ if (!is_null($events['events'])) {
 		//$text = $event['message']['text'];
 			
 			$randomnumber = $b[rand(0,5)];
-			//$randomnumber = $a[$random_keys[0]];
+			$randomnumber = "ran vip"; /////check
 			// Get replyToken
 			
 			
