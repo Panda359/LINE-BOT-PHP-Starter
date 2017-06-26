@@ -61,7 +61,7 @@ if (!is_null($events['events'])) {
 			
 		//$text = $event['message']['text'];
 			$randomnumber='';
-			for($i=0;$i<14;$i++)
+			for($i=0;$i<15;$i++)
 			{
 				$randomnumber = $randomnumber.$a[$i]."\n";
 			}
