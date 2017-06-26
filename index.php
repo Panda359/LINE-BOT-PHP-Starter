@@ -10,12 +10,21 @@ $events = json_decode($content, true);
 if (!is_null($events['events'])) {
 	// Loop through each event
 	
-	$a[0]="member1";
-	$a[1]="member2";
-	$a[2]="member3";
-	$a[3]="member4";
-	$a[4]="member5";
-	$a[5]="member6";
+	$a[0]="Mayume";
+	$a[1]="Shark";
+	$a[2]="Chimerical";
+	$a[3]="Aiden";
+	$a[4]="Deathover";
+	$a[5]="Aunkoz";
+	$a[6]="Anagura";
+	$a[7]="Rosita";
+	$a[8]="เอแคลร์แช่แข็ง";
+	$a[9]="Sondamonday";
+	$a[10]="Nongmo";
+	$a[11]="Imbaboyz";
+	$a[12]="หญิงกลาง";
+	$a[13]="Urara";
+	$a[14]="Meijuan";
 	
 	
 	$b[0]="vip1";
@@ -52,7 +61,7 @@ if (!is_null($events['events'])) {
 			
 		//$text = $event['message']['text'];
 			$randomnumber='';
-			for($i=0;$i<6;$i++)
+			for($i=0;$i<14;$i++)
 			{
 				$randomnumber = $randomnumber.$a[$i]."\n";
 			}
@@ -259,7 +268,7 @@ if (!is_null($events['events'])) {
 			
 		//$text = $event['message']['text'];
 			
-			$randomnumber = $a[rand(0,5)];
+			$randomnumber = $a[rand(0,14)];
 		//	$randomnumber = "ran member"; ///////check
 			// Get replyToken
 			
