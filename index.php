@@ -27,12 +27,12 @@ if (!is_null($events['events'])) {
 	$a[14]="Meijuan";
 	
 	
-	$b[0]="vip1";
-	$b[1]="vip2";
-	$b[2]="vip3";
-	$b[3]="vip4";
-	$b[4]="vip5";
-	$b[5]="vip6";
+	$b[0]="member1";
+	$b[1]="member2";
+	$b[2]="member3";
+	$b[3]="member4";
+	$b[4]="member5";
+	$b[5]="member6";
 	
 	
 	
@@ -52,7 +52,7 @@ if (!is_null($events['events'])) {
 		$text_mes=substr_replace($text_mes, '', 0 , 1);
 		$text_mes = trim($text_mes);
 				
-			if ($event['type'] == 'message' && $event['message']['type'] == 'text' && $text_mes == "all member")
+			if ($event['type'] == 'message' && $event['message']['type'] == 'text' && $text_mes == "all list")
 		{
 		
 	//	$random_keys=array_rand($a,1);
@@ -202,7 +202,7 @@ if (!is_null($events['events'])) {
 		}
 		
 				
-				else if ($event['type'] == 'message' && $event['message']['type'] == 'text' && $text_mes == "all vip")
+				else if ($event['type'] == 'message' && $event['message']['type'] == 'text' && $text_mes == "all member")
 		{
 		
 	//	$random_keys=array_rand($a,1);
@@ -259,7 +259,7 @@ if (!is_null($events['events'])) {
 		
 		}	
 				
-		else if ($event['type'] == 'message' && $event['message']['type'] == 'text' && $text_mes == "ran member")
+		else if ($event['type'] == 'message' && $event['message']['type'] == 'text' && $text_mes == "ran list")
 		{
 		
 	//	$random_keys=array_rand($a,1);
@@ -312,7 +312,7 @@ if (!is_null($events['events'])) {
 		
 		}
 				
-				else if ($event['type'] == 'message' && $event['message']['type'] == 'text' && $text_mes == "ran vip")
+				else if ($event['type'] == 'message' && $event['message']['type'] == 'text' && $text_mes == "ran member")
 		{
 		//$random_keys=array_rand($a,1);
 		
