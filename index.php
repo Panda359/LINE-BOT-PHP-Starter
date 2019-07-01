@@ -9,8 +9,8 @@ $events = json_decode($content, true);
 if (!is_null($events['events'])) {
 	// Loop through each event
 	
-	/*$a[0]="Mayume";
-	$a[1]="Shark";
+	$a[0]="Mayume";
+	$a[1]="xShark";
 	$a[2]="Chimerical";
 	$a[3]="Aiden";
 	$a[4]="Deathover";
@@ -24,8 +24,8 @@ if (!is_null($events['events'])) {
 	$a[12]="หญิงกลาง";
 	$a[13]="Urara";
 	$a[14]="Meijuan";
-	*/
 	
+	/*
 	$a[0]="บ.ชาบูจัง จำกัด";
 $a[1]="ชายสี่หมี่เกี๊ยว";
 $a[2]="ร้านลมเย็น";
@@ -42,7 +42,7 @@ $a[12]="ร้านก๋วยเตี๋ยวเรืออนุเสา
 $a[13]="ก๋วยเตี๋ยวต้มยำ ต้นท้อน";
 $a[14]="คูซิหม่าปิงย่างผ่าเหล่า";
 
-
+*/
 	
 	$b[0]="mem1";
 	$b[1]="member2";
