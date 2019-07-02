@@ -10,7 +10,7 @@ if (!is_null($events['events'])) {
 	// Loop through each event
 	
 	$a[0]="Mayume";
-	$a[1]="xxShark";
+	$a[1]="xxxShark";
 	$a[2]="Chimerical";
 	$a[3]="Aiden";
 	$a[4]="Deathover";
