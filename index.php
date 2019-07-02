@@ -2039,13 +2039,56 @@ $a[2010]="ร้านเจ๊ดา";
 $a[2011]="บ่อเหล็ด";
 $a[2012]="ธนาทิพย์ 1";
 
-	
+/*	
 	$b[0]="mem1";
 	$b[1]="member2";
 	$b[2]="member3";
 	$b[3]="member4";
 	$b[4]="member5";
 	$b[5]="member6";
+*/
+	
+$c[0]="ขนมจีนน้ำยาปู สร้อยหลีเป๊ะ เขต8";
+$c[1]="ร้านขนมจีนหน้าสวน";
+$c[2]="ร้านขนมจีนนคร";
+$c[3]="ขนมจีนแม่ญา";
+$c[4]="ร้านขนมจีนบุฟเฟ่ต์  59";
+$c[5]="ขนมจีนเมืองลุง";
+$c[6]="ป้าเล็กขนมจีนเมืองคอน";
+$c[7]="ขนมจีนลุงไข่ปากพนัง";
+$c[8]="ขนมจีนยายพัน";
+$c[9]="ขนมจีนเจ๊เดือน";
+$c[10]="ข้าวแกงคนคอน ขนมจีนหม้อดิน";
+$c[11]="โปรดใจขนมจีนเส้นสด";
+$c[12]="ขนมจีนเจ๊แหม่ม";
+$c[13]="ขนมจีนอิสลาม";
+$c[14]="ร้านขนมจีน";
+$c[15]="ขนมจีนรสเด็ด 10 ตุลา";
+$c[16]="ขนมจีนป้าชื่น สาขา 3";
+$c[17]="ขนมจีนแม่สุ";
+$c[18]="ขนมจีนหน้าสวน";
+$c[19]="ขนมจีนโกเปียก";
+$c[20]="ร้านขนมจีนเส้นสดนวลแก้ว";
+$c[21]="ขนมจีนมือถือ";
+$c[22]="ร้านขนมจีนท่าวัง";
+$c[23]="ขนมจีนพี่นิต";
+$c[24]="หลวงทีปขนมจีน";
+$c[25]="ขนมจีนป้าแหม่ม";
+$c[26]="ขนมจีนขุนศรีปากพนัง";
+$c[27]="ขนมจีนป้าฮวย";
+$c[28]="ขนมจีนน้ำเงี้ยวแม่จัน";
+$c[29]="ขนมจีนบ้านทองวงศ์";
+$c[30]="ร้านขนมจีนป้าชื่น";
+$c[31]="ขนมจีนซาดิสซ์";
+$c[32]="ขนมจีนป้าสาว";
+$c[33]="ขนมจีนป้าชื่น";
+$c[34]="ขนมจีนคลองเตย";
+$c[35]="บ้านกินเส้น";
+$c[36]="โปรดใจขนมจีนเส้นสด";
+$c[37]="ร้านกินเส้น";
+$c[38]="ร้านขนมจีนเส้นสดนวลแก้ว";
+
+	
 	
 	
 	
@@ -2323,7 +2366,7 @@ $a[2012]="ธนาทิพย์ 1";
 		}	
 				
 		/*else if ($event['type'] == 'message' && $event['message']['type'] == 'text' && $text_mes == "ran list")*/
-		else if ($event['type'] == 'message' && $event['message']['type'] == 'text' && $text_mes == "เที่ยงนี้กินอะไรดี")		
+		else if ($event['type'] == 'message' && $event['message']['type'] == 'text' && $text_mes == "โค้กกินกับอะไรก็อร่อย")		
 		{
 		
 	//	$random_keys=array_rand($a,1);
@@ -2333,6 +2376,112 @@ $a[2012]="ธนาทิพย์ 1";
 		//$text = $event['message']['text'];
 			
 			$randomnumber = $a[rand(0,2012)];
+		//	$randomnumber = "ran member"; ///////check
+			// Get replyToken
+			
+			
+			$replyToken = $event['replyToken'];
+
+			// Build message to reply back
+	
+			$messages3 = [
+				
+			
+				'type' => 'text',
+				'text' => $randomnumber
+				
+					];
+			
+			
+
+			// Make a POST Request to Messaging API to reply to sender
+			$url = 'https://api.line.me/v2/bot/message/reply';
+			$data = [
+				'replyToken' => $replyToken,
+				'messages' => [$messages3],
+				
+				
+			];
+			$post = json_encode($data);
+			$headers = array('Content-Type: application/json', 'Authorization: Bearer ' . $access_token);
+
+			$ch = curl_init($url);
+			curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");
+			curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+			curl_setopt($ch, CURLOPT_POSTFIELDS, $post);
+			curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
+			curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
+			$result = curl_exec($ch);
+			curl_close($ch);
+
+			echo $result . "\r\n";
+		
+		
+		}
+				
+				else if ($event['type'] == 'message' && $event['message']['type'] == 'text' && $text_mes == "กินโค้กกับขนมจีน")		
+		{
+		
+	//	$random_keys=array_rand($a,1);
+		
+			
+			
+		//$text = $event['message']['text'];
+			
+			$randomnumber = $c[rand(0,38)];
+		//	$randomnumber = "ran member"; ///////check
+			// Get replyToken
+			
+			
+			$replyToken = $event['replyToken'];
+
+			// Build message to reply back
+	
+			$messages3 = [
+				
+			
+				'type' => 'text',
+				'text' => $randomnumber
+				
+					];
+			
+			
+
+			// Make a POST Request to Messaging API to reply to sender
+			$url = 'https://api.line.me/v2/bot/message/reply';
+			$data = [
+				'replyToken' => $replyToken,
+				'messages' => [$messages3],
+				
+				
+			];
+			$post = json_encode($data);
+			$headers = array('Content-Type: application/json', 'Authorization: Bearer ' . $access_token);
+
+			$ch = curl_init($url);
+			curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");
+			curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+			curl_setopt($ch, CURLOPT_POSTFIELDS, $post);
+			curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
+			curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
+			$result = curl_exec($ch);
+			curl_close($ch);
+
+			echo $result . "\r\n";
+		
+		
+		}
+	
+				else if ($event['type'] == 'message' && $event['message']['type'] == 'text' && $text_mes == "กินโค้กกับส้มตำ")		
+		{
+		
+	//	$random_keys=array_rand($a,1);
+		
+			
+			
+		//$text = $event['message']['text'];
+			
+			$randomnumber = $d[rand(0,38)];
 		//	$randomnumber = "ran member"; ///////check
 			// Get replyToken
 			
