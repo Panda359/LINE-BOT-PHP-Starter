@@ -2864,7 +2864,7 @@ $i[104]="อาหารตามสั่งงามตา";
 
 	foreach ($events['events'] as $event) {
 		
-		if ($event['type'] == 'leave'
+		if ($event['type'] == 'join'
 		    
 		    {
 		    
