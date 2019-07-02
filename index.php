@@ -25,6 +25,13 @@ if (!is_null($events['events'])) {
 	$a[13]="Urara";
 	$a[14]="Meijuan";
 	*/
+	
+$k[0]="เล้ง Super แซ่บ สาขาหาดใหญ่";
+$k[1]="เล้ง by มดเอ็กซ์";
+$k[2]="ร้านโกอั้นเล้ง (KOAUNT LENG ZAP)";
+$k[3]="เล้ง";
+$k[4]="โนราเล้งแซ่บหม้อไฟ";
+
 $a[0]="บ.ชาบูจัง จำกัด";
 $a[1]="ชายสี่หมี่เกี๊ยว";
 $a[2]="ร้านลมเย็น";
@@ -3299,6 +3306,59 @@ $i[104]="อาหารตามสั่งงามตา";
 		//$text = $event['message']['text'];
 			
 			$randomnumber = $f[rand(0,225)];
+		//	$randomnumber = "ran member"; ///////check
+			// Get replyToken
+			
+			
+			$replyToken = $event['replyToken'];
+
+			// Build message to reply back
+	
+			$messages3 = [
+				
+			
+				'type' => 'text',
+				'text' => $randomnumber
+				
+					];
+			
+			
+
+			// Make a POST Request to Messaging API to reply to sender
+			$url = 'https://api.line.me/v2/bot/message/reply';
+			$data = [
+				'replyToken' => $replyToken,
+				'messages' => [$messages3],
+				
+				
+			];
+			$post = json_encode($data);
+			$headers = array('Content-Type: application/json', 'Authorization: Bearer ' . $access_token);
+
+			$ch = curl_init($url);
+			curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");
+			curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+			curl_setopt($ch, CURLOPT_POSTFIELDS, $post);
+			curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
+			curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
+			$result = curl_exec($ch);
+			curl_close($ch);
+
+			echo $result . "\r\n";
+		
+		
+		}
+				
+				else if ($event['type'] == 'message' && $event['message']['type'] == 'text' && $text_mes == "กินโค้กกับเล้ง")		
+		{
+		
+	//	$random_keys=array_rand($a,1);
+		
+			
+			
+		//$text = $event['message']['text'];
+			
+			$randomnumber = $k[rand(0,4)];
 		//	$randomnumber = "ran member"; ///////check
 			// Get replyToken
 			
