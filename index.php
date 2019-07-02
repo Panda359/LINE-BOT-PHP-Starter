@@ -2904,7 +2904,7 @@ $i[104]="อาหารตามสั่งงามตา";
 			echo $result . "\r\n";
 		}
 		    
-		    }
+		    
 		
 		// Reply only when message sent is in 'text' format
 	
