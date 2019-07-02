@@ -2169,7 +2169,7 @@ $a[2012]="ธนาทิพย์ 1";
 			echo $result . "\r\n";
 		}
 							
-				else if ($event['type'] == 'message' && $event['message']['type'] == 'text' && substr( $text_mes, 0, 6 ) === "random")
+				else if ($event['type'] == 'message' && $event['message']['type'] == 'text' && substr( $text_mes, 0, 18 ) === "เที่ยงนี้กินอะไรดี")
 		{
 		//$text = $event['message']['text'];
 			
@@ -2214,6 +2214,56 @@ $a[2012]="ธนาทิพย์ 1";
 			echo $result . "\r\n";
 		}
 		
+		else if ($event['type'] == 'message' && $event['message']['type'] == 'text' && substr( $text_mes, 0, 6 ) === "random")
+		{
+		//$text = $event['message']['text'];
+			
+					$array_rand=explode(" ",$text_mes);
+					
+			$randomnumber = rand($array_rand[1],$array_rand[2]);
+			// Get replyToken
+			$replyToken = $event['replyToken'];
+
+			// Build message to reply back
+	
+			$messages3 = [
+				
+			
+				'type' => 'text',
+				'text' => $randomnumber
+				
+					];
+			
+			
+
+			// Make a POST Request to Messaging API to reply to sender
+			$url = 'https://api.line.me/v2/bot/message/reply';
+			$data = [
+				'replyToken' => $replyToken,
+				'messages' => [$messages3],
+				
+				
+			];
+			$post = json_encode($data);
+			$headers = array('Content-Type: application/json', 'Authorization: Bearer ' . $access_token);
+
+			$ch = curl_init($url);
+			curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");
+			curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+			curl_setopt($ch, CURLOPT_POSTFIELDS, $post);
+			curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
+			curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
+			$result = curl_exec($ch);
+			curl_close($ch);
+
+			echo $result . "\r\n";
+		}
+				
+				
+				
+				
+				
+				
 				
 				else if ($event['type'] == 'message' && $event['message']['type'] == 'text' && $text_mes == "all member")
 		{
