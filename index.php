@@ -2272,7 +2272,8 @@ $a[2012]="ธนาทิพย์ 1";
 		
 		}	
 				
-		else if ($event['type'] == 'message' && $event['message']['type'] == 'text' && $text_mes == "ran list")
+		/*else if ($event['type'] == 'message' && $event['message']['type'] == 'text' && $text_mes == "ran list")*/
+		else if ($event['type'] == 'message' && $event['message']['type'] == 'text' && $text_mes == "เที่ยงนี้กินอะไรดี")		
 		{
 		
 	//	$random_keys=array_rand($a,1);
