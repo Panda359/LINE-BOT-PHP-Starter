@@ -2074,7 +2074,7 @@ $a[2012]="ธนาทิพย์ 1";
 			
 		//$text = $event['message']['text'];
 			$randomnumber='';
-			for($i=0;$i<15;$i++)
+			for($i=0;$i<2013;$i++)
 			{
 				$randomnumber = $randomnumber.$a[$i]."\n";
 			}
