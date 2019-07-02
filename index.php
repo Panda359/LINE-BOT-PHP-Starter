@@ -2169,7 +2169,7 @@ $a[2012]="ธนาทิพย์ 1";
 			echo $result . "\r\n";
 		}
 							
-				else if ($event['type'] == 'message' && $event['message']['type'] == 'text' && substr( $text_mes, 0, 18 ) === "เที่ยงนี้กินอะไรดี")
+				else if ($event['type'] == 'message' && $event['message']['type'] == 'text' && substr( $text_mes, 0, 6 ) === "filter")
 		{
 		//$text = $event['message']['text'];
 			
