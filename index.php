@@ -3741,15 +3741,113 @@ $i[104]="อาหารตามสั่งงามตา";
 					];
 			
 			
-			$messages2 = [
+			$messages2 = 
 				
-				 'type' => 'text',
+				/* 'type' => 'text',
 				'text' => $text 
+*/
+				
+				array (
+  'type' => 'flex',
+  'altText' => 'Flex Message',
+  'contents' => 
+  array (
+    'type' => 'carousel',
+    'contents' => 
+    array (
+      0 => 
+      array (
+        'type' => 'bubble',
+        'hero' => 
+        array (
+          'type' => 'image',
+          'url' => 'https://scdn.line-apps.com/n/channel_devcenter/img/fx/01_5_carousel.png',
+          'size' => 'full',
+          'aspectRatio' => '20:13',
+          'aspectMode' => 'cover',
+        ),
+        'body' => 
+        array (
+          'type' => 'box',
+          'layout' => 'vertical',
+          'spacing' => 'sm',
+          'contents' => 
+          array (
+            0 => 
+            array (
+              'type' => 'text',
+              'text' => 'Arm Chair, White',
+              'size' => 'xl',
+              'weight' => 'bold',
+              'wrap' => true,
+            ),
+            1 => 
+            array (
+              'type' => 'box',
+              'layout' => 'baseline',
+              'contents' => 
+              array (
+                0 => 
+                array (
+                  'type' => 'text',
+                  'text' => '$49',
+                  'flex' => 0,
+                  'size' => 'xl',
+                  'weight' => 'bold',
+                  'wrap' => true,
+                ),
+                1 => 
+                array (
+                  'type' => 'text',
+                  'text' => '.99',
+                  'flex' => 0,
+                  'size' => 'sm',
+                  'weight' => 'bold',
+                  'wrap' => true,
+                ),
+              ),
+            ),
+          ),
+        ),
+        'footer' => 
+        array (
+          'type' => 'box',
+          'layout' => 'vertical',
+          'spacing' => 'sm',
+          'contents' => 
+          array (
+            0 => 
+            array (
+              'type' => 'button',
+              'action' => 
+              array (
+                'type' => 'uri',
+                'label' => 'Add to Cart',
+                'uri' => 'https://linecorp.com',
+              ),
+              'style' => 'primary',
+            ),
+            1 => 
+            array (
+              'type' => 'button',
+              'action' => 
+              array (
+                'type' => 'uri',
+                'label' => 'Add to whishlist',
+                'uri' => 'https://linecorp.com',
+              ),
+            ),
+          ),
+        ),
+      ),
+    ),
+  ),
+)
 
 				
 		
 				
-					];
+					;
 			
 			
 
