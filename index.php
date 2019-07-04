@@ -3749,8 +3749,8 @@ $i[104]="อาหารตามสั่งงามตา";
 				
 				
 				
-  "type": "text",
-  "text": "Hello"
+  "type" => "text",
+  "text" => "Hello"
 
 				
 				
