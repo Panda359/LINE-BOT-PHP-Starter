@@ -3915,7 +3915,7 @@ $i[104]="อาหารตามสั่งงามตา";
       ]
     }
   }
-}
+};
 			
 			
 			$headers = array('Content-Type: application/json', 'Authorization: Bearer ' . $access_token);
