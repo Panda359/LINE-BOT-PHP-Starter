@@ -3762,6 +3762,7 @@ $i[104]="อาหารตามสั่งงามตา";
         array (
           'type' => 'image',
           'url' => 'https://scdn.line-apps.com/n/channel_devcenter/img/fx/01_5_carousel.png',
+          'margin' => 'xxl',
           'size' => 'full',
           'aspectRatio' => '20:13',
           'aspectMode' => 'cover',
@@ -3825,6 +3826,7 @@ $i[104]="อาหารตามสั่งงามตา";
                 'label' => 'Add to Cart',
                 'uri' => 'https://linecorp.com',
               ),
+              'color' => '#4BD03C',
               'style' => 'primary',
             ),
             1 => 
@@ -3917,12 +3919,13 @@ $i[104]="อาหารตามสั่งงามตา";
               'type' => 'button',
               'action' => 
               array (
-                'type' => 'uri',
-                'label' => 'Add to Cart',
-                'uri' => 'https://linecorp.com',
+                'type' => 'postback',
+                'label' => 'Post Back',
+                'text' => 'Post Back Text',
+                'data' => 'Post Back Data',
               ),
               'flex' => 2,
-              'color' => '#AAAAAA',
+              'color' => '#4BD03C',
               'style' => 'primary',
             ),
             1 => 
@@ -3966,11 +3969,7 @@ $i[104]="อาหารตามสั่งงามตา";
     ),
   ),
 )
-
-				
-		
-				
-					;
+	;
 			
 			
 
