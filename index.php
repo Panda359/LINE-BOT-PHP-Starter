@@ -3743,8 +3743,17 @@ $i[104]="อาหารตามสั่งงามตา";
 			
 			$messages2 = [
 				
-				'type' => 'text',
-				'text' => $text
+				/* 'type' => 'text',
+				'text' => $text */
+				
+				
+				
+				
+  "type": "text",
+  "text": "Hello"
+
+				
+				
 /*			
 "type": "flex",
   "altText": "Flex Message",
