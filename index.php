@@ -4077,7 +4077,7 @@ $i[104]="อาหารตามสั่งงามตา";
 				'text' => $text 
 */
 				
-				array (
+				 array (
   'type' => 'flex',
   'altText' => 'Flex Message',
   'contents' => 
@@ -4091,7 +4091,7 @@ $i[104]="อาหารตามสั่งงามตา";
         'hero' => 
         array (
           'type' => 'image',
-          'url' => 'https://scdn.line-apps.com/n/channel_devcenter/img/fx/01_5_carousel.png',
+          'url' => 'https://ed.files-media.com/ud/book/content/1/149/444385/paploen-005.jpg',
           'margin' => 'xxl',
           'size' => 'full',
           'aspectRatio' => '20:13',
@@ -4106,14 +4106,6 @@ $i[104]="อาหารตามสั่งงามตา";
           array (
             0 => 
             array (
-              'type' => 'text',
-              'text' => 'Arm Chair, White',
-              'size' => 'xl',
-              'weight' => 'bold',
-              'wrap' => true,
-            ),
-            1 => 
-            array (
               'type' => 'box',
               'layout' => 'baseline',
               'contents' => 
@@ -4121,7 +4113,7 @@ $i[104]="อาหารตามสั่งงามตา";
                 0 => 
                 array (
                   'type' => 'text',
-                  'text' => '$49',
+                  'text' => 'กิน',
                   'flex' => 0,
                   'size' => 'xl',
                   'weight' => 'bold',
@@ -4130,110 +4122,23 @@ $i[104]="อาหารตามสั่งงามตา";
                 1 => 
                 array (
                   'type' => 'text',
-                  'text' => '.99',
+                  'text' => 'โค้ก',
                   'flex' => 0,
-                  'size' => 'sm',
+                  'size' => 'xxl',
                   'weight' => 'bold',
+                  'color' => '#FF0000',
                   'wrap' => true,
                 ),
-              ),
-            ),
-          ),
-        ),
-        'footer' => 
-        array (
-          'type' => 'box',
-          'layout' => 'vertical',
-          'spacing' => 'sm',
-          'contents' => 
-          array (
-            0 => 
-            array (
-              'type' => 'button',
-              'action' => 
-              array (
-                'type' => 'uri',
-                'label' => 'Add to Cart',
-                'uri' => 'https://linecorp.com',
-              ),
-              'color' => '#4BD03C',
-              'style' => 'primary',
-            ),
-            1 => 
-            array (
-              'type' => 'button',
-              'action' => 
-              array (
-                'type' => 'uri',
-                'label' => 'Add to whishlist',
-                'uri' => 'https://linecorp.com',
-              ),
-            ),
-          ),
-        ),
-      ),
-      1 => 
-      array (
-        'type' => 'bubble',
-        'hero' => 
-        array (
-          'type' => 'image',
-          'url' => 'https://scdn.line-apps.com/n/channel_devcenter/img/fx/01_6_carousel.png',
-          'size' => 'full',
-          'aspectRatio' => '20:13',
-          'aspectMode' => 'cover',
-        ),
-        'body' => 
-        array (
-          'type' => 'box',
-          'layout' => 'vertical',
-          'spacing' => 'sm',
-          'contents' => 
-          array (
-            0 => 
-            array (
-              'type' => 'text',
-              'text' => 'Metal Desk Lamp',
-              'size' => 'xl',
-              'weight' => 'bold',
-              'wrap' => true,
-            ),
-            1 => 
-            array (
-              'type' => 'box',
-              'layout' => 'baseline',
-              'flex' => 1,
-              'contents' => 
-              array (
-                0 => 
+                2 => 
                 array (
                   'type' => 'text',
-                  'text' => '$11',
+                  'text' => 'กับส้มตำ',
                   'flex' => 0,
                   'size' => 'xl',
                   'weight' => 'bold',
                   'wrap' => true,
                 ),
-                1 => 
-                array (
-                  'type' => 'text',
-                  'text' => '.99',
-                  'flex' => 0,
-                  'size' => 'sm',
-                  'weight' => 'bold',
-                  'wrap' => true,
-                ),
               ),
-            ),
-            2 => 
-            array (
-              'type' => 'text',
-              'text' => 'Temporarily out of stock',
-              'flex' => 0,
-              'margin' => 'md',
-              'size' => 'xxs',
-              'color' => '#FF5551',
-              'wrap' => true,
             ),
           ),
         ),
@@ -4250,31 +4155,74 @@ $i[104]="อาหารตามสั่งงามตา";
               'action' => 
               array (
                 'type' => 'postback',
-                'label' => 'Post Back',
-                'text' => '* o *',
-                'data' => 'Post Back Data',
+                'label' => 'RANDOM',
+                'text' => '* กินโค้กกับส้มตำ *',
+                'data' => '* กินโค้กกับส้มตำ *',
               ),
-              'flex' => 2,
-              'color' => '#4BD03C',
+              'color' => '#FF0000',
               'style' => 'primary',
-            ),
-            1 => 
-            array (
-              'type' => 'button',
-              'action' => 
-              array (
-                'type' => 'uri',
-                'label' => 'Add to wish list',
-                'uri' => 'https://linecorp.com',
-              ),
             ),
           ),
         ),
       ),
-      2 => 
+      1 => 
       array (
         'type' => 'bubble',
+        'hero' => 
+        array (
+          'type' => 'image',
+          'url' => 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiQVADqVnHGiHhJ_Tj5PQ31ygMwQTkrqQmUyX9KwI2qYDAWro1',
+          'margin' => 'xxl',
+          'size' => 'full',
+          'aspectRatio' => '20:13',
+          'aspectMode' => 'cover',
+        ),
         'body' => 
+        array (
+          'type' => 'box',
+          'layout' => 'vertical',
+          'spacing' => 'sm',
+          'contents' => 
+          array (
+            0 => 
+            array (
+              'type' => 'box',
+              'layout' => 'baseline',
+              'contents' => 
+              array (
+                0 => 
+                array (
+                  'type' => 'text',
+                  'text' => 'กิน',
+                  'flex' => 0,
+                  'size' => 'xl',
+                  'weight' => 'bold',
+                  'wrap' => true,
+                ),
+                1 => 
+                array (
+                  'type' => 'text',
+                  'text' => 'โค้ก',
+                  'flex' => 0,
+                  'size' => 'xxl',
+                  'weight' => 'bold',
+                  'color' => '#FF0000',
+                  'wrap' => true,
+                ),
+                2 => 
+                array (
+                  'type' => 'text',
+                  'text' => 'กับขนมจีน',
+                  'flex' => 0,
+                  'size' => 'xl',
+                  'weight' => 'bold',
+                  'wrap' => true,
+                ),
+              ),
+            ),
+          ),
+        ),
+        'footer' => 
         array (
           'type' => 'box',
           'layout' => 'vertical',
@@ -4286,20 +4234,180 @@ $i[104]="อาหารตามสั่งงามตา";
               'type' => 'button',
               'action' => 
               array (
-                'type' => 'uri',
-                'label' => 'See more',
-                'uri' => 'https://linecorp.com',
+                'type' => 'postback',
+                'label' => 'RANDOM',
+                'text' => '* กินโค้กกับขนมจีน *',
+                'data' => '* กินโค้กกับขนมจีน *',
               ),
-              'flex' => 1,
-              'gravity' => 'center',
+              'color' => '#FF0000',
+              'style' => 'primary',
+            ),
+          ),
+        ),
+      ),
+      2 => 
+      array (
+        'type' => 'bubble',
+        'hero' => 
+        array (
+          'type' => 'image',
+          'url' => 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTm7dmj2f-v7oBhDBt6K_-t-Ggy_tJnIfIptu9q1OreOCbCUV-8dg',
+          'margin' => 'xxl',
+          'size' => 'full',
+          'aspectRatio' => '20:13',
+          'aspectMode' => 'cover',
+        ),
+        'body' => 
+        array (
+          'type' => 'box',
+          'layout' => 'vertical',
+          'spacing' => 'sm',
+          'contents' => 
+          array (
+            0 => 
+            array (
+              'type' => 'box',
+              'layout' => 'baseline',
+              'contents' => 
+              array (
+                0 => 
+                array (
+                  'type' => 'text',
+                  'text' => 'กิน',
+                  'flex' => 0,
+                  'size' => 'xl',
+                  'weight' => 'bold',
+                  'wrap' => true,
+                ),
+                1 => 
+                array (
+                  'type' => 'text',
+                  'text' => 'โค้ก',
+                  'flex' => 0,
+                  'size' => 'xxl',
+                  'weight' => 'bold',
+                  'color' => '#FF0000',
+                  'wrap' => true,
+                ),
+                2 => 
+                array (
+                  'type' => 'text',
+                  'text' => 'กับปิ้ง-ย่าง',
+                  'flex' => 0,
+                  'size' => 'xl',
+                  'weight' => 'bold',
+                  'wrap' => true,
+                ),
+              ),
+            ),
+          ),
+        ),
+        'footer' => 
+        array (
+          'type' => 'box',
+          'layout' => 'vertical',
+          'spacing' => 'sm',
+          'contents' => 
+          array (
+            0 => 
+            array (
+              'type' => 'button',
+              'action' => 
+              array (
+                'type' => 'postback',
+                'label' => 'RANDOM',
+                'text' => '* กินโค้กกับปิ้ง-ย่าง *',
+                'data' => '* กินโค้กกับปิ้ง-ย่าง *',
+              ),
+              'color' => '#FF0000',
+              'style' => 'primary',
+            ),
+          ),
+        ),
+      ),
+      3 => 
+      array (
+        'type' => 'bubble',
+        'hero' => 
+        array (
+          'type' => 'image',
+          'url' => 'https://ed.files-media.com/ud/book/content/1/149/444072/Pa-Khiat-005.jpg',
+          'margin' => 'xxl',
+          'size' => 'full',
+          'aspectRatio' => '20:13',
+          'aspectMode' => 'cover',
+        ),
+        'body' => 
+        array (
+          'type' => 'box',
+          'layout' => 'vertical',
+          'spacing' => 'sm',
+          'contents' => 
+          array (
+            0 => 
+            array (
+              'type' => 'box',
+              'layout' => 'baseline',
+              'contents' => 
+              array (
+                0 => 
+                array (
+                  'type' => 'text',
+                  'text' => 'กิน',
+                  'flex' => 0,
+                  'size' => 'lg',
+                  'weight' => 'bold',
+                  'wrap' => true,
+                ),
+                1 => 
+                array (
+                  'type' => 'text',
+                  'text' => 'โค้ก',
+                  'flex' => 0,
+                  'size' => 'xxl',
+                  'weight' => 'bold',
+                  'color' => '#FF0000',
+                  'wrap' => true,
+                ),
+                2 => 
+                array (
+                  'type' => 'text',
+                  'text' => 'กับอาหารตามสั่ง',
+                  'flex' => 0,
+                  'size' => 'lg',
+                  'weight' => 'bold',
+                  'wrap' => true,
+                ),
+              ),
+            ),
+          ),
+        ),
+        'footer' => 
+        array (
+          'type' => 'box',
+          'layout' => 'vertical',
+          'spacing' => 'sm',
+          'contents' => 
+          array (
+            0 => 
+            array (
+              'type' => 'button',
+              'action' => 
+              array (
+                'type' => 'postback',
+                'label' => 'RANDOM',
+                'text' => '* กินโค้กกับอาหารตามสั่ง *',
+                'data' => '* กินโค้กกับอาหารตามสั่ง *',
+              ),
+              'color' => '#FF0000',
+              'style' => 'primary',
             ),
           ),
         ),
       ),
     ),
   ),
-)
-	;
+);
 			
 			
 
