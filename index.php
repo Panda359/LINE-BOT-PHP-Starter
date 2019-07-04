@@ -3921,7 +3921,7 @@ $i[104]="อาหารตามสั่งงามตา";
               array (
                 'type' => 'postback',
                 'label' => 'Post Back',
-                'text' => 'Post Back Text',
+                'text' => '* o *',
                 'data' => 'Post Back Data',
               ),
               'flex' => 2,
