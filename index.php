@@ -3204,7 +3204,7 @@ $i[104]="อาหารตามสั่งงามตา";
 			
 		//$text = $event['message']['text'];
 			
-			$randomnumber = $a[rand(0,2012)];
+			//**************$randomnumber = $a[rand(0,2012)];
 		//	$randomnumber = "ran member"; ///////check
 			// Get replyToken
 			
@@ -3213,13 +3213,333 @@ $i[104]="อาหารตามสั่งงามตา";
 
 			// Build message to reply back
 	
-			$messages3 = [
-				
-			
-				'type' => 'text',
-				'text' => $randomnumber
-				
-					];
+			$messages3 = array (
+  'type' => 'flex',
+  'altText' => 'Flex Message',
+  'contents' => 
+  array (
+    'type' => 'carousel',
+    'contents' => 
+    array (
+      0 => 
+      array (
+        'type' => 'bubble',
+        'hero' => 
+        array (
+          'type' => 'image',
+          'url' => 'https://ed.files-media.com/ud/book/content/1/149/444385/paploen-005.jpg',
+          'margin' => 'xxl',
+          'size' => 'full',
+          'aspectRatio' => '20:13',
+          'aspectMode' => 'cover',
+        ),
+        'body' => 
+        array (
+          'type' => 'box',
+          'layout' => 'vertical',
+          'spacing' => 'sm',
+          'contents' => 
+          array (
+            0 => 
+            array (
+              'type' => 'box',
+              'layout' => 'baseline',
+              'contents' => 
+              array (
+                0 => 
+                array (
+                  'type' => 'text',
+                  'text' => 'กิน',
+                  'flex' => 0,
+                  'size' => 'xl',
+                  'weight' => 'bold',
+                  'wrap' => true,
+                ),
+                1 => 
+                array (
+                  'type' => 'text',
+                  'text' => 'โค้ก',
+                  'flex' => 0,
+                  'size' => 'xxl',
+                  'weight' => 'bold',
+                  'color' => '#FF0000',
+                  'wrap' => true,
+                ),
+                2 => 
+                array (
+                  'type' => 'text',
+                  'text' => 'กับส้มตำ',
+                  'flex' => 0,
+                  'size' => 'xl',
+                  'weight' => 'bold',
+                  'wrap' => true,
+                ),
+              ),
+            ),
+          ),
+        ),
+        'footer' => 
+        array (
+          'type' => 'box',
+          'layout' => 'vertical',
+          'spacing' => 'sm',
+          'contents' => 
+          array (
+            0 => 
+            array (
+              'type' => 'button',
+              'action' => 
+              array (
+                'type' => 'postback',
+                'label' => 'RANDOM',
+                'data' => '* กินโค้กกับส้มตำ *',
+              ),
+              'color' => '#FF0000',
+              'style' => 'primary',
+            ),
+          ),
+        ),
+      ),
+      1 => 
+      array (
+        'type' => 'bubble',
+        'hero' => 
+        array (
+          'type' => 'image',
+          'url' => 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiQVADqVnHGiHhJ_Tj5PQ31ygMwQTkrqQmUyX9KwI2qYDAWro1',
+          'margin' => 'xxl',
+          'size' => 'full',
+          'aspectRatio' => '20:13',
+          'aspectMode' => 'cover',
+        ),
+        'body' => 
+        array (
+          'type' => 'box',
+          'layout' => 'vertical',
+          'spacing' => 'sm',
+          'contents' => 
+          array (
+            0 => 
+            array (
+              'type' => 'box',
+              'layout' => 'baseline',
+              'contents' => 
+              array (
+                0 => 
+                array (
+                  'type' => 'text',
+                  'text' => 'กิน',
+                  'flex' => 0,
+                  'size' => 'xl',
+                  'weight' => 'bold',
+                  'wrap' => true,
+                ),
+                1 => 
+                array (
+                  'type' => 'text',
+                  'text' => 'โค้ก',
+                  'flex' => 0,
+                  'size' => 'xxl',
+                  'weight' => 'bold',
+                  'color' => '#FF0000',
+                  'wrap' => true,
+                ),
+                2 => 
+                array (
+                  'type' => 'text',
+                  'text' => 'กับขนมจีน',
+                  'flex' => 0,
+                  'size' => 'xl',
+                  'weight' => 'bold',
+                  'wrap' => true,
+                ),
+              ),
+            ),
+          ),
+        ),
+        'footer' => 
+        array (
+          'type' => 'box',
+          'layout' => 'vertical',
+          'spacing' => 'sm',
+          'contents' => 
+          array (
+            0 => 
+            array (
+              'type' => 'button',
+              'action' => 
+              array (
+                'type' => 'postback',
+                'label' => 'RANDOM',
+                'data' => '* กินโค้กกับขนมจีน *',
+              ),
+              'color' => '#FF0000',
+              'style' => 'primary',
+            ),
+          ),
+        ),
+      ),
+      2 => 
+      array (
+        'type' => 'bubble',
+        'hero' => 
+        array (
+          'type' => 'image',
+          'url' => 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTm7dmj2f-v7oBhDBt6K_-t-Ggy_tJnIfIptu9q1OreOCbCUV-8dg',
+          'margin' => 'xxl',
+          'size' => 'full',
+          'aspectRatio' => '20:13',
+          'aspectMode' => 'cover',
+        ),
+        'body' => 
+        array (
+          'type' => 'box',
+          'layout' => 'vertical',
+          'spacing' => 'sm',
+          'contents' => 
+          array (
+            0 => 
+            array (
+              'type' => 'box',
+              'layout' => 'baseline',
+              'contents' => 
+              array (
+                0 => 
+                array (
+                  'type' => 'text',
+                  'text' => 'กิน',
+                  'flex' => 0,
+                  'size' => 'xl',
+                  'weight' => 'bold',
+                  'wrap' => true,
+                ),
+                1 => 
+                array (
+                  'type' => 'text',
+                  'text' => 'โค้ก',
+                  'flex' => 0,
+                  'size' => 'xxl',
+                  'weight' => 'bold',
+                  'color' => '#FF0000',
+                  'wrap' => true,
+                ),
+                2 => 
+                array (
+                  'type' => 'text',
+                  'text' => 'กับปิ้ง-ย่าง',
+                  'flex' => 0,
+                  'size' => 'xl',
+                  'weight' => 'bold',
+                  'wrap' => true,
+                ),
+              ),
+            ),
+          ),
+        ),
+        'footer' => 
+        array (
+          'type' => 'box',
+          'layout' => 'vertical',
+          'spacing' => 'sm',
+          'contents' => 
+          array (
+            0 => 
+            array (
+              'type' => 'button',
+              'action' => 
+              array (
+                'type' => 'postback',
+                'label' => 'RANDOM',
+                'data' => '* กินโค้กกับปิ้ง-ย่าง *',
+              ),
+              'color' => '#FF0000',
+              'style' => 'primary',
+            ),
+          ),
+        ),
+      ),
+      3 => 
+      array (
+        'type' => 'bubble',
+        'hero' => 
+        array (
+          'type' => 'image',
+          'url' => 'https://ed.files-media.com/ud/book/content/1/149/444072/Pa-Khiat-005.jpg',
+          'margin' => 'xxl',
+          'size' => 'full',
+          'aspectRatio' => '20:13',
+          'aspectMode' => 'cover',
+        ),
+        'body' => 
+        array (
+          'type' => 'box',
+          'layout' => 'vertical',
+          'spacing' => 'sm',
+          'contents' => 
+          array (
+            0 => 
+            array (
+              'type' => 'box',
+              'layout' => 'baseline',
+              'contents' => 
+              array (
+                0 => 
+                array (
+                  'type' => 'text',
+                  'text' => 'กิน',
+                  'flex' => 0,
+                  'size' => 'lg',
+                  'weight' => 'bold',
+                  'wrap' => true,
+                ),
+                1 => 
+                array (
+                  'type' => 'text',
+                  'text' => 'โค้ก',
+                  'flex' => 0,
+                  'size' => 'xxl',
+                  'weight' => 'bold',
+                  'color' => '#FF0000',
+                  'wrap' => true,
+                ),
+                2 => 
+                array (
+                  'type' => 'text',
+                  'text' => 'กับอาหารตามสั่ง',
+                  'flex' => 0,
+                  'size' => 'lg',
+                  'weight' => 'bold',
+                  'wrap' => true,
+                ),
+              ),
+            ),
+          ),
+        ),
+        'footer' => 
+        array (
+          'type' => 'box',
+          'layout' => 'vertical',
+          'spacing' => 'sm',
+          'contents' => 
+          array (
+            0 => 
+            array (
+              'type' => 'button',
+              'action' => 
+              array (
+                'type' => 'postback',
+                'label' => 'RANDOM',
+                'data' => '* กินโค้กกับอาหารตามสั่ง *',
+              ),
+              'color' => '#FF0000',
+              'style' => 'primary',
+            ),
+          ),
+        ),
+      ),
+    ),
+  ),
+);
 			
 			
 
