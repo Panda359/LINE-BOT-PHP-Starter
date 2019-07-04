@@ -3840,6 +3840,129 @@ $i[104]="อาหารตามสั่งงามตา";
           ),
         ),
       ),
+      1 => 
+      array (
+        'type' => 'bubble',
+        'hero' => 
+        array (
+          'type' => 'image',
+          'url' => 'https://scdn.line-apps.com/n/channel_devcenter/img/fx/01_6_carousel.png',
+          'size' => 'full',
+          'aspectRatio' => '20:13',
+          'aspectMode' => 'cover',
+        ),
+        'body' => 
+        array (
+          'type' => 'box',
+          'layout' => 'vertical',
+          'spacing' => 'sm',
+          'contents' => 
+          array (
+            0 => 
+            array (
+              'type' => 'text',
+              'text' => 'Metal Desk Lamp',
+              'size' => 'xl',
+              'weight' => 'bold',
+              'wrap' => true,
+            ),
+            1 => 
+            array (
+              'type' => 'box',
+              'layout' => 'baseline',
+              'flex' => 1,
+              'contents' => 
+              array (
+                0 => 
+                array (
+                  'type' => 'text',
+                  'text' => '$11',
+                  'flex' => 0,
+                  'size' => 'xl',
+                  'weight' => 'bold',
+                  'wrap' => true,
+                ),
+                1 => 
+                array (
+                  'type' => 'text',
+                  'text' => '.99',
+                  'flex' => 0,
+                  'size' => 'sm',
+                  'weight' => 'bold',
+                  'wrap' => true,
+                ),
+              ),
+            ),
+            2 => 
+            array (
+              'type' => 'text',
+              'text' => 'Temporarily out of stock',
+              'flex' => 0,
+              'margin' => 'md',
+              'size' => 'xxs',
+              'color' => '#FF5551',
+              'wrap' => true,
+            ),
+          ),
+        ),
+        'footer' => 
+        array (
+          'type' => 'box',
+          'layout' => 'vertical',
+          'spacing' => 'sm',
+          'contents' => 
+          array (
+            0 => 
+            array (
+              'type' => 'button',
+              'action' => 
+              array (
+                'type' => 'uri',
+                'label' => 'Add to Cart',
+                'uri' => 'https://linecorp.com',
+              ),
+              'flex' => 2,
+              'color' => '#AAAAAA',
+              'style' => 'primary',
+            ),
+            1 => 
+            array (
+              'type' => 'button',
+              'action' => 
+              array (
+                'type' => 'uri',
+                'label' => 'Add to wish list',
+                'uri' => 'https://linecorp.com',
+              ),
+            ),
+          ),
+        ),
+      ),
+      2 => 
+      array (
+        'type' => 'bubble',
+        'body' => 
+        array (
+          'type' => 'box',
+          'layout' => 'vertical',
+          'spacing' => 'sm',
+          'contents' => 
+          array (
+            0 => 
+            array (
+              'type' => 'button',
+              'action' => 
+              array (
+                'type' => 'uri',
+                'label' => 'See more',
+                'uri' => 'https://linecorp.com',
+              ),
+              'flex' => 1,
+              'gravity' => 'center',
+            ),
+          ),
+        ),
+      ),
     ),
   ),
 )
