@@ -3228,7 +3228,7 @@ $i[104]="อาหารตามสั่งงามตา";
         'hero' => 
         array (
           'type' => 'image',
-          'url' => 'https://d8xxy3dl0iwm6.cloudfront.net/wp-content/uploads/2019/11/2-10.jpg',
+          'url' => 'https://d8xxy3dl0iwm6.cloudfront.net/wp-content/uploads/2019/11/1-20.jpg',
           'margin' => 'xxl',
           'size' => 'full',
           'aspectRatio' => '20:13',
@@ -3468,7 +3468,7 @@ $i[104]="อาหารตามสั่งงามตา";
         'hero' => 
         array (
           'type' => 'image',
-          'url' => 'https://ed.files-media.com/ud/book/content/1/149/444072/Pa-Khiat-005.jpg',
+          'url' => 'https://d8xxy3dl0iwm6.cloudfront.net/wp-content/uploads/2019/11/2-10.jpg',
           'margin' => 'xxl',
           'size' => 'full',
           'aspectRatio' => '20:13',
