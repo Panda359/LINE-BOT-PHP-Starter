@@ -3228,7 +3228,7 @@ $i[104]="อาหารตามสั่งงามตา";
         'hero' => 
         array (
           'type' => 'image',
-          'url' => 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRZoJOAUyt9e3FTGaZdO86DduFZC6H0B_lPXg&usqp=CAU',
+          'url' => 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiQVADqVnHGiHhJ_Tj5PQ31ygMwQTkrqQmUyX9KwI2qYDAWro1',
           'margin' => 'xxl',
           'size' => 'full',
           'aspectRatio' => '20:13',
