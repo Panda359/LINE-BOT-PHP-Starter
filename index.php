@@ -3228,7 +3228,7 @@ $i[104]="อาหารตามสั่งงามตา";
         'hero' => 
         array (
           'type' => 'image',
-          'url' => 'https://d8xxy3dl0iwm6.cloudfront.net/wp-content/uploads/2019/11/1-20.jpg',
+          'url' => 'https://siamrath.co.th/files/styles/1140/public/img/20191107/7d44ff3bee4008571e364860c8923c1cc6fb666e787a96ab0097d4dad7a8990b.jpg?itok=bN-9_ZAW',
           'margin' => 'xxl',
           'size' => 'full',
           'aspectRatio' => '20:13',
