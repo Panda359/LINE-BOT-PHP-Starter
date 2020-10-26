@@ -3228,7 +3228,7 @@ $i[104]="อาหารตามสั่งงามตา";
         'hero' => 
         array (
           'type' => 'image',
-          'url' => 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiQVADqVnHGiHhJ_Tj5PQ31ygMwQTkrqQmUyX9KwI2qYDAWro1',
+          'url' => 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZoJOAUyt9e3FTGaZdO86DduFZC6H0B_lPXg',
           'margin' => 'xxl',
           'size' => 'full',
           'aspectRatio' => '20:13',
@@ -3269,7 +3269,7 @@ $i[104]="อาหารตามสั่งงามตา";
                 2 => 
                 array (
                   'type' => 'text',
-                  'text' => 'กับส้มตำ',
+                  'text' => 'กับส้มตำ.,
                   'flex' => 0,
                   'size' => 'xl',
                   'weight' => 'bold',
